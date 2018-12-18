@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.studio216.fbs" >
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme" >
+        <activity
+            android:name="com.studio216.fbs.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dtr.zxing.activity.CaptureActivity"
+            android:label="@string/title_activity_capture"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.studio216.fbs.BookActivity"
+            android:label="@string/title_activity_book"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.studio216.fbs.CheckActivity"
+            android:label="@string/title_activity_check" />
+        <activity
+            android:name="com.studio216.fbs.ISBNActivity"
+            android:label="@string/title_activity_isbn" />
+        <activity
+            android:name="com.studio216.fbs.BorrowBookActivity"
+            android:label="@string/title_activity_borrow_book"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar" />
+        <activity
+            android:name="com.studio216.fbs.SettingActivity"
+            android:label="@string/title_activity_setting" />
+        <activity
+            android:name="com.studio216.fbs.CheckContentActivity"
+            android:label="@string/title_activity_check_content" />
+        <activity
+            android:name="com.studio216.fbs.MagazineActivity"
+            android:label="@string/title_activity_magazine" />
+        <activity
+            android:name="com.studio216.fbs.InternalDataActivity"
+            android:label="@string/title_activity_internal_data" />
+        <activity
+            android:name="com.studio216.fbs.AllCheckActivity"
+            android:label="@string/title_activity_all_check" />
+        <activity
+            android:name="com.studio216.fbs.SurplusActivity"
+            android:label="@string/title_activity_surplus"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar" />
+        <activity
+            android:name="com.studio216.fbs.SummaryActivity"
+            android:label="@string/title_activity_summary" >
+        </activity>
+    </application>
+
+</manifest>

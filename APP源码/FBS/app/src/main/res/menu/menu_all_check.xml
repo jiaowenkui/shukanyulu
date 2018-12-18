@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.studio216.fbs.AllCheckActivity">
+    <item android:id="@+id/action_new_check" android:title="@string/action_new_check"
+        android:orderInCategory="100" android:showAsAction="always" />
+</menu>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/activity_magazine_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/is_loading_imag" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/activity_magazine_text_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="20dp"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:id="@+id/activity_magazine_button_borrow_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="借书"
+                    android:textSize="20sp"
+                    bootstrapbutton:bb_icon_left="fa-heart"
+                    bootstrapbutton:bb_roundedCorners="true"
+                    bootstrapbutton:bb_type="warning" />
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:id="@+id/activity_magazine_button_check_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="4"
+                    android:text="入库"
+                    android:textSize="20sp"
+                    bootstrapbutton:bb_icon_left="fa-bookmark"
+                    bootstrapbutton:bb_roundedCorners="true"
+                    bootstrapbutton:bb_type="success" />
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:id="@+id/activity_magazine_button_back_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="还书"
+                    android:textSize="20sp"
+                    bootstrapbutton:bb_icon_left="fa-angle-double-down"
+                    bootstrapbutton:bb_roundedCorners="true"
+                    bootstrapbutton:bb_type="info" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/activity_magazine_text_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:background="@color/white"
+                android:lineSpacingExtra="5dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:textColor="@color/textGrey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"></LinearLayout>
+    </LinearLayout>
+</ScrollView>

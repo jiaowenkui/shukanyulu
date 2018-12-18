@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.studio216.fbs.CheckContentActivity">
+    <item
+        android:id="@+id/action_check"
+        android:title="@string/action_check"
+        android:showAsAction="always" />
+    <item
+        android:id="@+id/action_tip"
+        android:title="@string/action_tip"
+        android:showAsAction="always" />
+</menu>
